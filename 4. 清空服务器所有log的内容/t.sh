@@ -1,4 +1,5 @@
 #!/bin/bash
+# 每月清空日志的计划任务 0 8 1 * * /bin/bash /path/to/your/script.sh
 
 # 找到所有大于 1KB 的日志文件并清空
 echo "清空超过 1KB 的日志文件："
