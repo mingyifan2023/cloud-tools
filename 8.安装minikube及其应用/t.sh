@@ -23,7 +23,7 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 
-minikube start
+minikube start --force --driver=docker
 
 
 # 默认为单节点，可添加节点，https://minikube.sigs.k8s.io/docs/commands/node
