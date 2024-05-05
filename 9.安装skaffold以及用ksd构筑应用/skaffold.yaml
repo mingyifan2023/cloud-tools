@@ -1,0 +1,16 @@
+apiVersion: skaffold/v2beta1
+kind: Config
+metadata:
+  name: service_name
+build:
+  artifacts:
+    - image: hello
+      context: .
+  tagPolicy:
+    sha256: {}
+  local:
+    useBuildkit: true
+deploy:
+  kubectl:
+    manifests:
+      - manifests/hello.yaml
