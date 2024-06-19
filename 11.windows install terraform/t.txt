@@ -1,0 +1,9 @@
+
+https://blog.csdn.net/saynaihe/article/details/132864284 in windows install terraform
+
+Get-ExecutionPolicy
+
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::Sec
+
+
+choco install terraform 
